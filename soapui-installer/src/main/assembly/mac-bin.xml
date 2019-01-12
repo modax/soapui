@@ -49,10 +49,10 @@ bundled or none -->
             </excludes>
         </fileSet>
         <fileSet>
-            <directory>${basedir}/target</directory>
+            <directory>${project.build.outputDirectory}</directory>
             <outputDirectory>bin</outputDirectory>
             <includes>
-                <include>SoapUI-Spashscreen.png</include>
+                <include>SoapUI-Spashscreen*.png</include>
             </includes>
         </fileSet>
         <fileSet>

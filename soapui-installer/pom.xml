@@ -26,7 +26,7 @@
             <version>1.2.1</version>
             <executions>
               <execution>
-                <phase>package</phase>
+                <phase>prepare-package</phase>
                 <goals>
                   <goal>java</goal>
                 </goals>
@@ -37,7 +37,7 @@
               <arguments>
                 <argument>SoapUI ${project.version}</argument>
                 <argument>${basedir}/src/main/resources/SoapUI-Spashscreen.png</argument>
-                <argument>${basedir}/target/SoapUI-Spashscreen.png</argument>
+                <argument>${project.build.outputDirectory}/SoapUI-Spashscreen.png</argument>
               </arguments>
             </configuration>
           </plugin>

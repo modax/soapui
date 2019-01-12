@@ -27,15 +27,6 @@
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.3</version>
-                <executions>
-                    <execution>
-                       <id>make-assembly</id>
-                       <phase>package</phase>
-                       <goals>
-                           <goal>single</goal>
-                       </goals>
-                    </execution>
-                </executions>
                 <configuration>
                     <outputDirectory>${assembly.build.directory}</outputDirectory>
                     <descriptors>
@@ -160,7 +151,7 @@
                 <version>1.2.1</version>
                 <executions>
                     <execution>
-                        <phase>prepare-package</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>java</goal>
                         </goals>
